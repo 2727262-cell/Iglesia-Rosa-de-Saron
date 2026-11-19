@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iglesia Rosa de Sarón</title>
+
+    <style>
+
+        /* COLORES */
+        :root {
+            --blanco: #F4F3F1;
+            --beige: #E8CFAC;
+            --arena: #BF9E78;
+            --gris: #5B5B5B;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: var(--blanco);
+            color: var(--gris);
+        }
+
+        /* BARRA SUPERIOR */
+        header {
+            background: white;
+            height: 85px;
+            padding: 10px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            box-shadow: 0 2px 8px #00000015;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 19px;
+            color: var(--gris);
+            margin: 0;
+        }
+
+        header p {
+            font-size: 13px;
+            color: var(--arena);
+            margin-top: 4px;
+        }
+
+        /* PORTADA */
+        .portada {
+            min-height: 350px;
+            background: linear-gradient(
+                120deg,
+                var(--beige),
+                var(--arena)
+            );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contenido {
+            max-width: 750px;
+        }
+
+        .contenido h2 {
+            font-size: 38px;
+            color: var(--gris);
+            margin-bottom: 20px;
+        }
+
+        .contenido p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* HORARIOS */
+        .horarios {
+            padding: 55px 8%;
+            background: var(--blanco);
+        }
+
+        .horarios h2 {
+            text-align: center;
+            font-size: 29px;
+            margin-bottom: 35px;
+            color: var(--gris);
+        }
+
+        .tabla-contenedor {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background: var(--gris);
+            color: white;
+            padding: 17px;
+            font-size: 15px;
+        }
+
+        td {
+            padding: 17px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            font-size: 15px;
+        }
+
+        tr:hover {
+            background: var(--blanco);
+        }
+
+        /* AFILIACIÓN */
+        .afiliacion {
+            background: var(--beige);
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        .afiliacion h2 {
+            font-size: 27px;
+            color: var(--gris);
+            margin-bottom: 18px;
+        }
+
+        .afiliacion p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background: var(--gris);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        /* ADAPTACIÓN A CELULARES */
+        @media (max-width: 600px) {
+
+            header {
+                height: 75px;
+                padding: 8px 15px;
+                gap: 10px;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+            header h1 {
+                font-size: 15px;
+            }
+
+            header p {
+                font-size: 11px;
+            }
+
+            .contenido h2 {
+                font-size: 27px;
+            }
+
+            .contenido p {
+                font-size: 15px;
+            }
+
+            .horarios {
+                padding: 40px 12px;
+            }
+
+            .horarios h2 {
+                font-size: 24px;
+            }
+
+            th, td {
+                padding: 12px 8px;
+                font-size: 12px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <header>
+
+        <img src="ROSA.jpg"
+             alt="Logo de Rosa de Sarón"
+             class="logo">
+
+        <div>
+            <h1>Iglesia de Dios de la Profecía</h1>
+            <p>ROSA DE SARÓN</p>
+        </div>
+
+    </header>
+
+
+    <!-- PORTADA -->
+    <section class="portada">
+
+        <div class="contenido">
+
+            <h2>Bienvenidos a Rosa de Sarón</h2>
+
+            <p>
+                Un lugar para adorar a Dios,
+                fortalecer nuestra fe y compartir
+                el amor de Jesucristo.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- HORARIOS DE CULTOS -->
+    <section class="horarios">
+
+        <h2>Horarios de cultos</h2>
+
+        <div class="tabla-contenedor">
+
+            <table>
+
+                <tr>
+                    <th>DÍA</th>
+                    <th>SOCIEDAD </th>
+                    <th>HORARIO</th>
+                </tr>
+
+                <tr>
+                    <td>Lunes</td>
+                    <td>Escuela biblica</td>
+                    <td>6:00p.m a 8:00p.m</td>
+                </tr>
+
+                <tr>
+                    <td>Martes</td>
+                    <td>Sociedad Femenil</td>
+                    <td>6:00p.m a 8:00p.m</td>
+                </tr>
+
+                <tr>
+                    <td>Miércoles</td>
+                    <td>Cultos de Familia</td>
+                    <td>Depende de cada hogar</td>
+                </tr>
+
+                <tr>
+                    <td>Jueves</td>
+                    <td>Sociedad de Embajadores</td>
+                    <td>6:00p.m a 8:00p.m</td>
+                </tr>
+
+                <tr>
+                    <td>Viernes</td>
+                    <td>Sociedad de Jovenes</td>
+                    <td>6:00p.m a 8:00p.m</td>
+                </tr>
+
+                <tr>
+                    <td>Sábado</td>
+                    <td>No hay culto</td>
+                    <td></td>
+                    
+                </tr>
+
+                <tr>
+                    <td>Domingo</td>
+                    <td>Culto general</td>
+                    <td>10:00a.m A 12:00m.d </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- AFILIACIÓN -->
+    <section class="afiliacion">
+
+        <h2>¿Donde estamos ubicados?</h2>
+
+        <p>
+            <a href="https://www.google.com/maps/place/Iglesia+De+Dios+De+La+Profec%C3%ADa+Rosa+De+Sarón,+Los+Planes+de+Renderos/@13.6360583,-89.1871329,17z/data=!4m2!3m1!1s0x8f63315f75d48511:0x8bc79fd8d805972b"> Ver ubicación de la iglesia</a>
+            
+            
+        </p>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 Iglesia de Dios de la Profecía
+            Rosa de Sarón
+        </p>
+
+        <p>Unidos en fe, amor y esperanza.</p>
+
+    </footer>
+
+</body>
+
+</html>
